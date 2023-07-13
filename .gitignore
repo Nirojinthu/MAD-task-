@@ -1,0 +1,48 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_application_5/pages/HomePage.dart';
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
+
+
+Main.dart
+import 'package:flutter/material.dart';
+import 'package:flutter_application_5/main.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    //return const HomePage();
+
+    return Scaffold(
+      appBar: AppBar(
+          title: const Text("jinthu"),
+          elevation: 4,
+          backgroundColor: Colors.green),
+      body: const Center(
+        child: Text(
+          "Haiiiiiiiii ",
+          style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold
+
+              // Set the desired font size
+              ),
+        ),
+      ),
+    );
+  }
+}
